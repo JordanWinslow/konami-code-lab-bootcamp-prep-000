@@ -15,7 +15,7 @@ function init() {
   let currentKeyCount = 0
   document.body.addEventListener("keydown", function(pressed){
     if(pressed.key === codes[currentKeyCount]) {
-      currentKeyCount === codes.length ? alert("OMGAWD YOU PRESSED SOME BUTTONS") :
+      currentKeyCount === codes.length ? alert("OMGAWD YOU PRESSED SOME BUTTONS") : currentKeyCount++
     }
   })
 }
