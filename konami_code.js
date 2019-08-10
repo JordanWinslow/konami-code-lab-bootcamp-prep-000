@@ -13,7 +13,11 @@ const codes = [
 
 function init() {
   document.body.addEventListener("keydown", function(pressed){
-    if(pressed.key === )
+    for(let currentIndex = 0; currentIndex < codes.length; currentIndex++){
+      if(pressed.key === codes[currentIndex] && currentIndex === codes.length){
+        alert("OMGAWD YOU PRESSED SOME BUTTONS")
+      }
+    }
   })
 }
 
