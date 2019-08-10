@@ -17,8 +17,9 @@ function init() {
     if(pressed.key === codes[currentKeyCount]) {
       if(currentKeyCount === codes.length) {
         alert("OMGAWD YOU PRESSED SOME BUTTONS");
+        currentKeyCount = 0
       } else {
-        currentKeyCount = currentKeyCount + 1
+        currentKeyCount++
       }
     }
   })
